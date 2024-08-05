@@ -22,9 +22,8 @@ public class Controller {
     }
 
     @GetMapping("/add")
-    public void add(@RequestParam("itemIds") List<Long> ItemIds) {
-        service.add(ItemIds);
-
+    public void add(@RequestParam("itemIds") List<Integer> itemIds) {
+        service.add(itemIds);
     }
 
     @GetMapping("/get")

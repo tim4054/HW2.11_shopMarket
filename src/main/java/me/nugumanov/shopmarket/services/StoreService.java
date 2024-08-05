@@ -5,7 +5,7 @@ import me.nugumanov.shopmarket.models.Item;
 import java.util.List;
 
 public interface StoreService {
-    void add(List<Long> ItemIds);
+    void add(List<Integer> ItemIds);
 
     List<Item> get();
 }

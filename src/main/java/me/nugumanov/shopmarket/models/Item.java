@@ -1,24 +1,38 @@
 package me.nugumanov.shopmarket.models;
 
 public class Item {
-    private long ID;
-
-    public Item(long ID) {
-        this.ID = ID;
+    private long id;
+    private String tittle;
+    public Item(long id, String tittle) {
+        this.id = id;
+        this.tittle = tittle;
     }
 
-    public long getID() {
-        return ID;
+
+
+    public long getId() {
+        return id;
     }
 
-    public void setID(long ID) {
-        this.ID = ID;
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getTittle() {
+        return tittle;
+    }
+
+    public void setTittle(String tittle) {
+        this.tittle = tittle;
     }
 
     @Override
     public String toString() {
-        return "ItemNew{" +
-                "ID=" + ID +
+        return "Item{" +
+                "ID=" + id +
+                ", tittle='" + tittle + '\'' +
                 '}';
     }
+
+
 }
