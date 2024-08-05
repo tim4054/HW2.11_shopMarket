@@ -1,27 +1,25 @@
 package me.nugumanov.shopmarket.models;
 
 public class Item {
-    private String tittle;
-    private int price;
+    private long ID;
 
-    public Item(String tittle, int price) {
-        this.tittle = tittle;
-        this.price = price;
+    public Item(long ID) {
+        this.ID = ID;
     }
 
-    public String getTittle() {
-        return tittle;
+    public long getID() {
+        return ID;
     }
 
-    public void setTittle(String tittle) {
-        this.tittle = tittle;
+    public void setID(long ID) {
+        this.ID = ID;
     }
 
-    public int getPrice() {
-        return price;
+    @Override
+    public String toString() {
+        return "ItemNew{" +
+                "ID=" + ID +
+                '}';
     }
 
-    public void setPrice(int price) {
-        this.price = price;
-    }
 }
