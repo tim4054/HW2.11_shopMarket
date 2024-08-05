@@ -17,43 +17,4 @@ public class Basket {
     public List<Item> getAll() {
         return Collections.unmodifiableList(basket);
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /*List<Item> itemList;
-    Map<Integer, Item> items = new HashMap<>(Map.of(
-            1, new Item( "Молоко", 100),
-            2, new Item( "Хлеб", 50),
-            3, new Item( "Яйца", 999)));
-
-    public Basket(List<Item> itemList) {
-        this.itemList = itemList;
-    }
-
-    public Item toAdd(int ID) {
-        Item item = items.get(ID);
-        itemList.add(item);
-        return item;
-    }*/
 }
